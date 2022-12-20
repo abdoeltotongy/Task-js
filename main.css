@@ -1,0 +1,317 @@
+/** @format */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 200px 100px;
+	gap: 10px;
+
+	position: relative;
+
+	height: 100vh;
+	width: 100%;
+
+	background-image: url(images/image.png);
+	background-size: cover;
+	background-position: center;
+}
+.welcome {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 60px;
+	gap: 60px;
+
+	width: 80%;
+	/* height: 435px; */
+
+	background: rgba(245, 247, 255, 0.85);
+	border-radius: 10px;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+.welcome .welcome-img {
+	width: 50%;
+}
+.welcome .welcome-img img {
+	width: 100%;
+	height: 300px;
+}
+.welcome .welcome-text {
+	width: 50%;
+
+	height: 100%;
+	display: grid;
+	justify-content: flex-start;
+}
+.welcome .welcome-text h1 {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 120%;
+	width: 100%;
+}
+.btn {
+	width: 100%;
+	color: white;
+	padding: 12px;
+	border: 1px solid #fff;
+	border-radius: 6px;
+	transition: all 0.5s ease-in-out;
+	background: linear-gradient(to right, #00f, #9198e5 70%);
+}
+.btn:hover {
+	background: linear-gradient(to right, #9198e5, #00f 70%);
+	/* background-color: #00f; */
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+.btn a {
+	color: white;
+	text-decoration: none;
+}
+.welcome-text h1,
+.welcome-text p,
+.welcome-text .btn {
+	margin: 30px auto;
+}
+/* ***************************      Register     *********************************** */
+.register {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+	gap: 30px;
+
+	width: 80%;
+	height: 80vh;
+
+	background: rgba(245, 247, 255, 0.85);
+	border-radius: 10px;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+.register .register-img {
+	width: 50%;
+	height: 100%;
+}
+.register .register-img img {
+	width: 100%;
+	height: 100%;
+}
+.register .register-form {
+	height: 100%;
+	display: grid;
+	justify-content: flex-start;
+}
+.register .register-form h1 {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 120%;
+	width: 100%;
+	margin: 0;
+}
+.register .register-form .form-group {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 5px 20px;
+	gap: 10px;
+
+	width: 100%;
+	height: 50px;
+
+	background: #ffffff;
+
+	border: 1px solid #dbe3ff;
+	border-radius: 10px;
+
+	margin: 5px 0px 10px;
+}
+.register .register-form .form-group input {
+	width: 100%;
+	padding: 8px;
+	border: none;
+	border-left: 1px solid #eee;
+}
+.register .register-form .form-group input:focus-visible {
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #555;
+}
+.fa-solid {
+	opacity: 0.4;
+}
+
+/* ***************************      Successfully     *********************************** */
+.Successfully {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 60px;
+	gap: 60px;
+
+	width: 80%;
+
+	background: rgba(245, 247, 255, 0.85);
+	border-radius: 10px;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+.Successfully .Successfully-img {
+	width: 50%;
+	height: 300px;
+}
+.Successfully .Successfully-img img {
+	width: 100%;
+	height: 100%;
+}
+/***********************************************************************************************************/
+/************************************         RESPONSIVE          ******************************************/
+/***********************************************************************************************************/
+@media (max-width: 576px) {
+	.container {
+		padding: 0%;
+	}
+	.welcome {
+		display: block;
+		padding: 40px;
+	}
+	.welcome .welcome-img {
+		width: 100%;
+	}
+	.welcome .welcome-text {
+		width: 100%;
+		height: auto;
+		display: block;
+		text-align: center;
+	}
+	.welcome-text h1,
+	.welcome-text p,
+	.welcome-text .btn {
+		margin: 15px auto;
+	}
+	/* *************************** */
+	.Successfully {
+		display: block;
+		padding: 40px;
+	}
+	.Successfully .Successfully-img {
+		width: 100%;
+	}
+	.Successfully .Successfully-text {
+		width: 100%;
+		height: auto;
+		display: block;
+		text-align: center;
+	}
+	/* *************************** */
+	.r-container .container {
+		height: auto;
+	}
+	.register {
+		display: block;
+		padding: 40px;
+		height: auto;
+		text-align: center;
+	}
+	.register .register-img {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	.register .register-text {
+		width: 100%;
+		height: auto;
+		display: block;
+		text-align: center;
+	}
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.welcome {
+		display: block;
+		padding: 40px;
+	}
+	.welcome .welcome-img {
+		width: 100%;
+	}
+	.welcome .welcome-text {
+		width: 100%;
+		height: auto;
+		display: block;
+		text-align: center;
+	}
+	.welcome-text h1,
+	.welcome-text p,
+	.welcome-text .btn {
+		margin: 15px auto;
+	}
+	/* *************************** */
+	.Successfully {
+		display: block;
+		padding: 40px;
+	}
+	.Successfully .Successfully-img {
+		width: 100%;
+	}
+	.Successfully .Successfully-text {
+		width: 100%;
+		height: auto;
+		display: block;
+		text-align: center;
+	}
+	/* *************************** */
+	.r-container .container {
+		height: auto;
+		padding: 50px;
+	}
+	.register {
+		display: block;
+		padding: 40px;
+		height: auto;
+		text-align: center;
+	}
+	.register .register-img {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	.register .register-text {
+		width: 100%;
+		height: auto;
+		display: block;
+		text-align: center;
+	}
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.container {
+		padding: 0;
+	}
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
